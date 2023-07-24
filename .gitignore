@@ -1,0 +1,37 @@
+# General
+target/
+node_modules/
+
+# IDE files (optional, based on your preference)
+.idea/
+.vscode/
+
+# Compiled Java class files
+*.class
+
+# Maven specific
+mvnw
+mvnw.cmd
+.mvn/
+
+# Gradle specific
+gradle/
+build/
+
+# Compiled React files
+build/
+
+# Logs
+*.log
+log/
+
+# Package files
+package-lock.json
+yarn.lock
+
+# Editor backup files
+*~
+
+# OS-specific files
+.DS_Store
+Thumbs.db
