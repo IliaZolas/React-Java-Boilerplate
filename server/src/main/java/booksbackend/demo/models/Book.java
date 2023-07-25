@@ -4,39 +4,42 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.validation.constraints.NotNull;
 
 @Entity
 public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    @NotNull
     private String title;
-
-    @NotNull
     private String description;
-
     private String imageUrl;
-
-    @NotNull
     private String publicId;
-
-    @ManyToOne
-    @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
-    public Book(String title, String description, String imageUrl, String publicId, User user) {
+    // Constructors, getters, and other methods
+
+    // Setter for title
+    public void setTitle(String title) {
         this.title = title;
-        this.description = description;
-        this.imageUrl = imageUrl;
-        this.publicId = publicId;
-        this.user = user;
     }
 
-    public Book() {
+    // Setter for description
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    // Setter for imageUrl
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
+
+    // Setter for publicId
+    public void setPublicId(String publicId) {
+        this.publicId = publicId;
+    }
+
+    // Setter for user
+    public void setUser(User user) {
+        this.user = user;
     }
 }
