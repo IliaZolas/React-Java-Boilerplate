@@ -24,9 +24,19 @@ public class User {
         return name;
     }
 
+    // Setter for name
+    public void setName(String name) {
+        this.name = name;
+    }
+
     // Getter for surname
     public String getSurname() {
         return surname;
+    }
+
+    // Setter for surname
+    public void setSurname(String surname) {
+        this.surname = surname;
     }
 
     // Getter for email
@@ -34,9 +44,19 @@ public class User {
         return email;
     }
 
+    // Setter for email
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     // Getter for password
     public String getPassword() {
         return password;
+    }
+
+    // Setter for password
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     // Getter for imageUrl
@@ -44,8 +64,18 @@ public class User {
         return imageUrl;
     }
 
+    // Setter for imageUrl
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
+
     // Getter for publicId
     public String getPublicId() {
         return publicId;
+    }
+
+    // Setter for publicId
+    public void setPublicId(String publicId) {
+        this.publicId = publicId;
     }
 }

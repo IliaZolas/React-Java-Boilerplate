@@ -16,11 +16,21 @@ public class Book {
     private String publicId;
     private User user;
 
-    // Constructors, getters, and other methods
+    // Constructors, setters, and other methods
+
+    // Getter for title
+    public String getTitle() {
+        return title;
+    }
 
     // Setter for title
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    // Getter for description
+    public String getDescription() {
+        return description;
     }
 
     // Setter for description
@@ -28,14 +38,29 @@ public class Book {
         this.description = description;
     }
 
+    // Getter for imageUrl
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
     // Setter for imageUrl
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
     }
 
+    // Getter for publicId
+    public String getPublicId() {
+        return publicId;
+    }
+
     // Setter for publicId
     public void setPublicId(String publicId) {
         this.publicId = publicId;
+    }
+
+    // Getter for user
+    public User getUser() {
+        return user;
     }
 
     // Setter for user
